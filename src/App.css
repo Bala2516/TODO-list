@@ -1,0 +1,188 @@
+.containers {
+  background-image: url("./asserts/back.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding: 80px;
+}
+
+.constainers-in {
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border: 1px solid #455653;
+}
+
+table th {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+
+.field {
+  font-size: large;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.input {
+  width: 100%;
+  margin: 6px 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  outline: 1px solid #8d8d8c;
+}
+
+.input:focus {
+  outline: 2px solid #8d8d8c;
+}
+
+.table-box {
+  margin: 10px;
+  padding: 10px;
+  height: 335px;
+  overflow: scroll;
+}
+
+.table-box::-webkit-scrollbar {
+  display: none;
+}
+
+.task-description {
+  background-image: url("./asserts/back.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.todo-header-design {
+  font-weight: 600;
+  font-size: 50px;
+  color: black;
+}
+
+.todo-badge {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #455653;
+  margin-top: 6px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.task-description-in {
+  border: 1px solid #455653;
+  width: 500px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+
+@media screen and (max-width: 700px) {
+  .task-description-in {
+    width: 450px;
+  }
+  .edit-column {
+    display: none;
+  }
+  .delete-column {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .constainers-in {
+    padding: 40px;
+  }
+  .task-description-in {
+    width: 400px;
+  }
+  .containers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+}
+@media screen and (max-width: 630px) {
+  .constainers-in {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .constainers-in {
+    padding: 20px;
+  }
+  .todo-header {
+    display: block;
+    margin: 4px 4px 10px 4px;
+  }
+
+  .todo-header-design {
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .todo-badge {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .task-description-in {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .containers {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .containers {
+    padding: 30px;
+  }
+  .table-box {
+  height: 450px;
+}
+}
+@media screen and (max-width: 370px) {
+  .constainers-in {
+    padding: 8px;
+  }
+  .containers {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .constainers-in {
+    padding: 6px;
+  }
+  .containers {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .constainers-in {
+    padding: 4px;
+  }
+  .containers {
+    padding: 10px;
+  }
+}
